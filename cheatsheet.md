@@ -1,18 +1,17 @@
 ## General
 
 running a repl
-```
-M-x ieml
-```
+
+    M-x ieml
+
 writing a script
 ```bash
 #!/usr/local/bin/emacs --script
 ```
 
-compile
-```
-M-x byte-compile-file
-```
+compiling
+
+    M-x byte-compile-file
 
 ## Elisp Stuff
 
