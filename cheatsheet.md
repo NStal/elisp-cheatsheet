@@ -5,6 +5,7 @@ running a repl
     M-x ieml
 
 writing a script
+
 ```bash
 #!/usr/local/bin/emacs --script
 ```
