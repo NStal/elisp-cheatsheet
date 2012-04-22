@@ -172,12 +172,19 @@ preserving point, mark, buffer, narrow
 (with-temp-buffer
   (insert "some shit")
   (buffer-string))
-```
+
+;; show a popup buffer in help mode and capture all writes to stdout
+;; to it (dismiss by pressing 'q')
+(with-output-to-temp-buffer "*some-buffer*"
+  (switch-to-buffer "*some-buffer*")
+  (princ "this will be in buffer\n"))
+ ```
 
 ### environment / files
 
 ```lisp
 (shell-command "ls -la") ;; outputs to buffer
+(shell-command-to-string "ls -la") ;; returns output
 command-line-args
 (getenv "HOME") ;; environment variables
 
